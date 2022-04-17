@@ -12,13 +12,6 @@ contract ContractTest is DSTest {
 }
 ```
 
-### Cheatcodes Address
-You can get the address of the cheatcodes account by accessing the `HEVM_ADDRESS` constant:
-
-```solidity
-Cheats cheats = Cheats(HEVM_ADDRESS);
-```
-
 ### Logging
 
 This is a complete overview of all the available logging events. For detailed descriptions and example usage, see below.
