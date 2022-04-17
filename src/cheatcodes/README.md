@@ -2,9 +2,9 @@
 
 Cheatcodes give you powerful assertions, the ability to alter the state of the EVM, mock data, and more.
 
-To enable a cheatcode you call designated functions on the cheatcode address: `0x7109709ECfa91a80626fF3989D68f67F5b1DD12D`.
+To enable a cheatcode you call designated functions on the cheatcode address: `0x7109709ECfa91a80626fF3989D68f67F5b1DD12D`, often refered to as 'Hevm'.
 
-This address can be accessed through the `HEVM_ADDRESS` constant in `DSTest`.
+You can access Hevm easily via the `vm` instance available in the Forge Standard Library's `Test`.
 
 Below are some subsections for the different cheatcodes in Forge.
 

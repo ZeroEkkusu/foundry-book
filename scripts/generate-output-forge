@@ -10,6 +10,7 @@ echo "Generating output (forge)..."
   in_temp hello_foundry
   (run_command forge init hello_foundry) > $OUTPUT_DIR/hello_foundry/forge-init
   cd hello_foundry
+  forge install foundry-rs/forge-std
   (run_command tree . -d -L 1) > $OUTPUT_DIR/hello_foundry/tree
   (run_command tree . -L 3 -I output) > $OUTPUT_DIR/hello_foundry/tree-with-files
   (run_command forge build) > $OUTPUT_DIR/hello_foundry/forge-build
@@ -27,6 +28,7 @@ echo "Generating output (forge)..."
   in_temp deps
   forge init deps
   cd deps
+  forge install foundry-rs/forge-std
   (run_command forge install Rari-Capital/solmate) > $OUTPUT_DIR/deps/forge-install
   forge install d-xo/weird-erc20
   (run_command tree lib -L 1) > $OUTPUT_DIR/deps/tree

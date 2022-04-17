@@ -3,11 +3,9 @@
 $ forge test
 // ANCHOR_END: command
 // ANCHOR: output
+Unable to resolve import: "forge-std/Test.sol" with remappings:
+        ds-test/=/home/xx/Documents/00x/foundry-book/projects/fuzz_testing/lib/ds-test/src/
+        src/=/home/xx/Documents/00x/foundry-book/projects/fuzz_testing/src/
 Compiling 1 files with 0.8.10
-Compiler run successful
-
-Running 1 test for src/test/Safe.t.sol:SafeTest
-[PASS] testWithdraw(uint96) (runs: 256, μ: 14642, ~: 19667)
-Test result: ok. 1 passed; 0 failed; finished in 10.16ms
 // ANCHOR_END: output
 // ANCHOR_END: all
